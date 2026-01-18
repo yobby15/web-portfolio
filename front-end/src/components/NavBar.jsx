@@ -7,7 +7,7 @@ function NavBar() {
 
   const isLightMode = theme === 'light';
 
-  const BgColor = isLightMode ? "bg-[#FFFFFF]" : "bg-[#1E293B]";
+  const BgColor = isLightMode ? "bg-[#FFF8DE]" : "bg-[#872341]";
 
   return (
     <nav className={`w-full flex justify-between items-center px-6 py-4 ${BgColor}`}>
