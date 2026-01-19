@@ -2,3 +2,27 @@
 @theme {
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
+
+:root[data-theme='light'] {
+  --navbar-bg: #F8FAFC;
+  --hero-bg: #EEF2F7;
+  --navbar-text-color: #1F2937;
+  --hero-text-color: #0F172A;
+}
+
+:root[data-theme='dark'] {
+  --navbar-bg: #0B0F1A;
+  --hero-bg: #121826;
+  --navbar-text-color: #D1D5DB;
+  --hero-text-color: #E5E7EB;
+}
+
+.navbar-theme {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text-color);
+}
+
+.hero-theme {
+  background-color: var(--hero-bg);
+  color: var(--hero-text-color);
+}

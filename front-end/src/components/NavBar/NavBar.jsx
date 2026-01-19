@@ -1,16 +1,12 @@
 import { Sun, Moon } from 'lucide-react';
-import ThemeContext from '../contexts/ThemeContext';
+import ThemeContext from '../../contexts/ThemeContext';
 import { useContext } from 'react';
 
 function NavBar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
-  const isLightMode = theme === 'light';
-
-  const BgColor = isLightMode ? "bg-[#FFF8DE]" : "bg-[#872341]";
-
   return (
-    <nav className={`w-full flex justify-between items-center px-6 py-4 ${BgColor}`}>
+    <nav className="w-full flex justify-between items-center px-6 py-4 navbar-theme">
       <div className="flex-1">
         <h1>
           Yobby Novialdi

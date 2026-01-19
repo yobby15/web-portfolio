@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import ThemeContext from './contexts/ThemeContext';
-import Hero from './sections/Hero';
+import Hero from './components/Hero/Hero';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
