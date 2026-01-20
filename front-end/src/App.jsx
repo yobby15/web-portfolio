@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import ThemeContext from './contexts/ThemeContext';
 import Hero from './components/Hero/Hero';
+import About from './components/About/About';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -32,6 +33,11 @@ function App() {
           <Hero>
             
           </Hero>
+        </section>
+        <section>
+          <About>
+            
+          </About>
         </section>
       </div>
     </ThemeContext.Provider>
