@@ -2,7 +2,7 @@ import MyWifeImg from '../../assets/images/MyWife.jpg';
 
 function Hero() {
   return (
-    <div className="flex px-8 py-10 hero-theme">
+    <div className="flex px-8 py-10 about-theme min-h-screen">
       <div className="flex-1 flex justify-center flex-col gap-5 text-justify">
 
 

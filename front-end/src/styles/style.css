@@ -8,13 +8,17 @@
   --hero-bg: #EEF2F7;
   --navbar-text-color: #1F2937;
   --hero-text-color: #0F172A;
-}
+  --about-bg: #E2E8F0;
+  --about-text-color: #475569;
+} 
 
 :root[data-theme='dark'] {
   --navbar-bg: #0B0F1A;
   --hero-bg: #121826;
   --navbar-text-color: #D1D5DB;
   --hero-text-color: #E5E7EB;
+  --about-bg: #1A2238;
+  --about-text-color: #9CA3AF;
 }
 
 .navbar-theme {
@@ -25,4 +29,9 @@
 .hero-theme {
   background-color: var(--hero-bg);
   color: var(--hero-text-color);
+}
+
+.about-theme {
+  background-color: var(--about-bg);
+  color: var(--about-text-color);
 }
