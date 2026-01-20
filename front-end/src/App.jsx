@@ -26,18 +26,12 @@ function App() {
   return (
     <ThemeContext.Provider value={themeContextValue}>
       <div>
-        <NavBar>
-          
-        </NavBar>
+        <NavBar/>
         <section>
-          <Hero>
-            
-          </Hero>
+          <Hero/>
         </section>
         <section>
-          <About>
-            
-          </About>
+          <About/>
         </section>
       </div>
     </ThemeContext.Provider>
