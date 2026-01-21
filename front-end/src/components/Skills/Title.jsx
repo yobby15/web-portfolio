@@ -1,8 +1,9 @@
 function Title() {
   return (
-    <h1 className="justify-center text-4xl text-center font-bold pt-2 pb-8">
-      My Skills
-    </h1>
+    <div className="text-center mb-20">
+      <h2 className="text-5xl font-black mb-4 uppercase">My Skills</h2>
+      <div className="w-24 h-2 bg-current mx-auto rounded-full" />
+    </div>
   )
 }
 

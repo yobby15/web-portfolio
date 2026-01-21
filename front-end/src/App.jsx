@@ -4,6 +4,7 @@ import ThemeContext from './contexts/ThemeContext';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -39,6 +40,10 @@ function App() {
         
         <section id="Skills">
           <Skills/>
+        </section>
+
+        <section id="Projects">
+          <Projects/>
         </section>
       </div>
     </ThemeContext.Provider>
