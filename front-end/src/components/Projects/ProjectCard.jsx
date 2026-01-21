@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ProjectCard({ title, tech, description, imagePath }) {
   return (
     <div className="flex flex-col gap-8 mb-24 lg:flex-row lg:items-start group">

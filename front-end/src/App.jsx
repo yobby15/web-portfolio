@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 import Experiences from './components/Experiences/Experiences';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -49,6 +50,10 @@ function App() {
 
         <section id="Experiences">
           <Experiences/>
+        </section>
+
+        <section id="Contact">
+          <Contact/>
         </section>
       </div>
     </ThemeContext.Provider>

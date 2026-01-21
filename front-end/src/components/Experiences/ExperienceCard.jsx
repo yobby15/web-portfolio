@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ExperienceCard({ role, company, location, period, description }) {
   return (
     <div className="relative pl-10 pb-16 border-l-2 border-blue-500 last:border-0 last:pb-0">
