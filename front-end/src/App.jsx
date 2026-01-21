@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import ThemeContext from './contexts/ThemeContext';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
+import Skills from './components/Skills/Skills';
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
@@ -27,11 +28,17 @@ function App() {
     <ThemeContext.Provider value={themeContextValue}>
       <div>
         <NavBar/>
-        <section>
+
+        <section id="Hero">
           <Hero/>
         </section>
-        <section>
+        
+        <section id="About">
           <About/>
+        </section>
+        
+        <section id="Skills">
+          <Skills/>
         </section>
       </div>
     </ThemeContext.Provider>

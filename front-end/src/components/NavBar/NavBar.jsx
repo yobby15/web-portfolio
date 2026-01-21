@@ -1,43 +1,16 @@
-import { Sun, Moon } from 'lucide-react';
-import ThemeContext from '../../contexts/ThemeContext';
-import { useContext } from 'react';
+import NavLinks from './NavLinks';
+import ToggelTheme from "./ToggleTheme";
 
 function NavBar() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
   return (
-    <nav className="w-full flex justify-between items-center px-6 py-4 navbar-theme">
-      <div className="flex-1">
-        <h1>
-          Yobby Novialdi
-        </h1>
-      </div>
-      <div className="flex flex-1 gap-8">
-        <button>
-          About
-        </button>
-        <button>
-          Skills
-        </button>
-        <button>
-          Projects
-        </button>
-        <button>
-          Experiences
-        </button>
-        <button>
-          Contact
-        </button>
-      </div>
-      <div className="flex flex-1 justify-end">
-        <button onClick={toggleTheme} className="">
-          {theme === 'dark' ? (
-            <Moon size={20} />
-          ) : (
-            <Sun size={20} />
-          )}
-        </button>
-      </div>
+    <nav className="navbar-theme h-15 fixed top-0 left-0 w-full flex justify-between items-center px-12 py-4 z-50 border-b border-white/5">
+      <button>
+        Yobby Novialdi
+      </button>
+
+      <NavLinks/>
+    
+      <ToggelTheme/>
     </nav>
   )
 }
