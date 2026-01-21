@@ -10,6 +10,8 @@
   --hero-text-color: #0F172A;
   --about-bg: #E2E8F0;
   --about-text-color: #475569;
+  --skills-bg: #EEF2F7;
+  --skills-text-color: #0F172A;
 } 
 
 :root[data-theme='dark'] {
@@ -19,6 +21,8 @@
   --hero-text-color: #E5E7EB;
   --about-bg: #1A2238;
   --about-text-color: #9CA3AF;
+  --skills-bg: #121826;
+  --skills-text-color: #E5E7EB;
 }
 
 .navbar-theme {
@@ -36,4 +40,9 @@
 .about-theme {
   background-color: var(--about-bg);
   color: var(--about-text-color);
+}
+
+.skills-theme {
+  background-color: var(--skills-bg);
+  color: var(--skills-text-color);
 }
